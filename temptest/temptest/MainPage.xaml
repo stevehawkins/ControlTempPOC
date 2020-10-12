@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="temptest.MainPage"
+             xmlns:controls="clr-namespace:temptest.Templates"
+             BackgroundColor="LightGray">
+
+    <ScrollView>
+    <StackLayout Padding="20" Spacing="30">
+
+        <Label Text="Collection with diff values" HorizontalOptions="CenterAndExpand" TextColor="Black" />
+        <CollectionView ItemsSource="{Binding DataList}"
+                        SelectionMode="None"
+                        BackgroundColor="White"
+                        VerticalOptions="FillAndExpand"
+                        >
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <controls:TestControl 
+                        Title="{Binding Title}" 
+                        Icon="{Binding Icon}"
+                        SubTitle="{Binding SubTitle}"
+                        RightText="{Binding RightText}"
+                                          />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

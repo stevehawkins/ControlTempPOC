@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="temptest.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="TestGridStyle" TargetType="Grid">
+                <Setter Property="Margin" Value="10" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            </Style>
+
+            <Style x:Key="Header1Style" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="HorizontalTextAlignment" Value="Start" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+
+            <Style x:Key="SubTextStyle" TargetType="Label" BasedOn="{StaticResource Header1Style}">
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="TextColor" Value="Gray" />
+            </Style>
+
+            <Style x:Key="RightTextStyle" TargetType="Label" BasedOn="{StaticResource SubTextStyle}">
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="TextColor" Value="Red" />
+            </Style>
+
+            <Style x:Key="ImageStyle" TargetType="Image">
+                <Setter Property="WidthRequest" Value="42" />
+                <Setter Property="HeightRequest" Value="42" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

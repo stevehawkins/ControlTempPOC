@@ -3,3 +3,8 @@
 ################################################################################
 
 /temptest/temptest/bin/Debug/netstandard2.0
+/temptest/temptest/obj
+/temptest/temptest.Android/bin/Debug
+/temptest/temptest.Android/obj
+/temptest/temptest.iOS/bin/iPhone/Debug
+/temptest/temptest.iOS/obj
